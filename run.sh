@@ -31,6 +31,7 @@ cd tuning
 cd ..
 bash working/extract_translit_pairs.sh
 echo "Done!"
+# scp LightningAI:/teamspace/studios/this_studio/BashantaraAI/mined-pairs.xlsx ~/Downloads/
 # mosesdecoder/bin/1-1-Extraction tuning/f tuning/e tuning/a > tuning/1-1.mr-en
 # mosesdecoder/scripts/Transliteration/clean.pl tuning/1-1.mr-en > tuning/1-1.mr-en.cleanednew
 # mosesdecoder/bin/TMining tuning/1-1.mr-en.cleanednew > tuning/1-1.mr-en.pair-probs-new
