@@ -1,7 +1,7 @@
-INDIC_NLP_LIB_HOME=r"indic_nlp_library"
+INDIC_NLP_LIB_HOME=r"/teamspace/studios/this_studio/BashantaraAI/indic_nlp_library"
 
 # The path to the local git repo for Indic NLP Resources
-INDIC_NLP_RESOURCES=r"indic_nlp_resources"
+INDIC_NLP_RESOURCES=r"/teamspace/studios/this_studio/BashantaraAI/indic_nlp_resources"
 
 
 import sys
@@ -17,11 +17,11 @@ loader.load()
 from indicnlp.normalize.indic_normalize import IndicNormalizerFactory
 from indicnlp.tokenize import indic_tokenize
 
-f_en = open('tuning/tune.en', 'r')
+f_en = open('/teamspace/studios/this_studio/BashantaraAI/en-mr/corpus/train.en', 'r')
 lines_en = f_en.read().split('\n')
 lines_en_out = []
 
-f_nt = open('tuning/tune.mr', 'r')
+f_nt = open('/teamspace/studios/this_studio/BashantaraAI/en-mr/corpus/train.mr', 'r')
 lines_nt = f_nt.read().split('\n')
 lines_nt_out = []
 
@@ -47,10 +47,10 @@ lines_en_out = [' '.join(indic_tokenize.trivial_tokenize(line_en)) for line_en i
 print(len(lines_nt_out))
 print(len(lines_en_out))
 
-f_en_out = open('tuning/tune.en','w')
+f_en_out = open('/teamspace/studios/this_studio/BashantaraAI/en-mr/corpus/train.en','w')
 f_en_out.write('\n'.join(lines_en_out))
 
-f_nt_out = open('tuning/tune.mr','w')
+f_nt_out = open('/teamspace/studios/this_studio/BashantaraAI/en-mr/corpus/train.mr','w')
 f_nt_out.write('\n'.join(lines_nt_out))
 
 f_nt_out.close()

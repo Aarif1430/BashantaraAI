@@ -162,7 +162,7 @@ train.mr
 train.en
 boost_1_83_0
 corpus
-en_mr
+en-mr
 filtered
 giza.*
 irstlm
@@ -173,3 +173,7 @@ model
 srilm
 tuning
 mgiza
+indic_nlp_library
+indic_nlp_resources
+samantar
+boost_1_60_0
