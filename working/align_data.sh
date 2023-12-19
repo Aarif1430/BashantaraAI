@@ -1,4 +1,4 @@
-mosesdecoder/scripts/training/train-model.perl -root-dir /teamspace/studios/this_studio/BashantaraAI/ \
+/teamspace/studios/this_studio/BashantaraAI/mosesdecoder/scripts/training/train-model.perl -root-dir /teamspace/studios/this_studio/BashantaraAI/ \
      -corpus /teamspace/studios/this_studio/BashantaraAI/en-mr/corpus/train \
      -f mr -e en -alignment grow-diag-final-and \
      -reordering msd-bidirectional-fe \
